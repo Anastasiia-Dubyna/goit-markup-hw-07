@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -54,6 +55,79 @@
             </li>
           </ul>
         </address>
+        <button type="button" data-menu-open class="menu-open">
+          <svg class="menu-humburger" width="30" height="20">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div>
+            <button type="button" data-menu-close class="menu-close">
+              <svg class="menu-btn-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list-item">
+                <a class="mob-menu-link link" href="">Studio</a>
+              </li>
+              <li class="mob-menu-list-item">
+                <a class="mob-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-list-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mob-menu-adress list">
+              <li class="mob-menu-adress-list">
+                <a class="mob-menu-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-adress-list">
+                <a class="mob-menu-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a class="mob-soc-link link" href="">
+                  <svg class="mob-soc-icon" widht="40" height="40">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-link link" href="">
+                  <svg class="mob-soc-icon" widht="40" height="40">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-link link" href="">
+                  <svg class="mob-soc-icon" widht="40" height="40">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-link link" href="">
+                  <svg class="mob-soc-icon" widht="40" height="40">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -129,6 +203,7 @@
           <ul class="about-list list">
             <li class="about-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 class="about-img"
                 src="./images/img1.jpg"
                 alt="img1"
@@ -137,6 +212,7 @@
             </li>
             <li class="about-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 class="about-img"
                 src="./images/img2.jpg"
                 alt="img2"
@@ -145,6 +221,7 @@
             </li>
             <li class="about-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 class="about-img"
                 src="./images/img3.jpg"
                 alt="img3"
@@ -160,6 +237,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x"
                 class="team-img"
                 src="./images/team1.jpg"
                 alt="team1"
@@ -202,6 +280,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team2.jpg 1x, ./images/team2-2x.jpg 2x"
                 class="team-img"
                 src="./images/team2.jpg"
                 alt="team2"
@@ -244,6 +323,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team3.jpg 1x, ./images/team3-2x.jpg 2x"
                 class="team-img"
                 src="./images/team3.jpg"
                 alt="team3"
@@ -286,6 +366,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/team4.jpg 1x, ./images/team4-2x.jpg 2x"
                 class="team-img"
                 src="./images/team4.jpg"
                 alt="team4"
@@ -425,7 +506,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe footer-section">
+        <div class="footer-subscribe">
           <p class="subscribe-title">Subscribe</p>
           <form class="footer-form">
             <div class="footer-subscribe-form">
@@ -534,5 +615,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
