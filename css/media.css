@@ -46,6 +46,10 @@
     }
 }
 
+.describe-title {
+    display: flex;
+    justify-content: center;
+}
 }
 
 /* .....................TABLET............................ */
@@ -171,6 +175,10 @@
 
 .describe-list-item {
     width: 356px;
+}
+
+.describe-title {
+    display: block;
 }
 
 .team-list {
